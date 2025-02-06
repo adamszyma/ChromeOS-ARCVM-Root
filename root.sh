@@ -75,7 +75,8 @@ fi
 cd /tmp
 echo '[+] Downloading kernel...'
 echo "${KSU_VER}/kernel-ARCVM-${ARCH}-${KERNEL_VER}.zip"
-curl -L -'#' "https://github.com/tiann/KernelSU/releases/download/${KSU_VER}/kernel-ARCVM-${ARCH}-${KERNEL_VER}.zip" -o ksu.zip
+#curl -L -'#' "https://github.com/tiann/KernelSU/releases/download/${KSU_VER}/kernel-ARCVM-${ARCH}-${KERNEL_VER}.zip" -o ksu.zip
+curl -L -'#' "https://github.com/tiann/KernelSU/releases/download/v1.0.3/kernel-ARCVM-x86_64-5.10.230.zip" -o ksu.zip
 
 echo '[+] Decompressing kernel...'
 mkdir -p ksu
